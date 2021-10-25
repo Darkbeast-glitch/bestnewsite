@@ -4,12 +4,12 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-         <title>News HTML-5 Template </title>
+         <title>VBUQS WORLD | Home of urban gospel news and trends </title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="manifest" href="site.webmanifest">
-		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+		<link rel="shortcut icon" type="image/x-icon" href="{% static 'pages/assets/img/logo/vbuqs.jpg'%}">
 
 		<!-- CSS here -->
 
@@ -42,7 +42,7 @@
                                 <div class="header-info-left">
                                     <ul>     
                                         <li><img src="{% static 'pages/assets/img/icon/header_icon1.png' %}" alt="">34ºc, Sunny </li>
-                                        <li><img src="{% static 'pages/assets/img/icon/header_icon1.png' %}" alt="">Tuesday, 18th June, 2019</li>
+                                        <li><img src="{% static 'pages/assets/img/icon/header_icon1.png' %}" alt="">Sunday,24th October 2021</li>
                                     </ul>
                                 </div>
                                 <div class="header-info-right">
@@ -62,7 +62,7 @@
                             <!-- Logo -->
                             <div class="col-xl-3 col-lg-3 col-md-3">
                                 <div class="logo">
-                                    <a href="index.html"><img src="{% static 'pages/assets/img/logo/logo.png' %}" alt=""></a>
+                                    <a href="{%url 'homepage' %}"><img src="{% static 'pages/assets/img/logo/vbuq.png' %}" style="width: 400px;" alt=""></a>
                                 </div>
                             </div>
                             <div class="col-xl-9 col-lg-9 col-md-9">
@@ -79,7 +79,7 @@
                             <div class="col-xl-10 col-lg-10 col-md-12 header-flex">
                                 <!-- sticky -->
                                     <div class="sticky-logo">
-                                        <a href="index.html"><img src="{% static 'pages/assets/img/logo/logo.png' %}" alt=""></a>
+                                        <a href="{% url 'homepage'%}"><img src="{% static 'pages/assets/img/logo/vbuq.png' %}" style="width: 290px;" alt=""></a>
                                     </div>
                                 <!-- Main-menu -->
                                 <div class="main-menu d-none d-md-block">
@@ -92,10 +92,9 @@
                                             <li><a href="contact.html">Contact</a></li>
                                             <li><a href="#">Pages</a>
                                                 <ul class="submenu">
-                                                    <li><a href="elements.html">Element</a></li>
                                                     <li><a href="blog.html">Blog</a></li>
                                                     <li><a href="single-blog.html">Blog Details</a></li>
-                                                    <li><a href="details.html">Categori Details</a></li>
+                                                    <li><a href="details.html">Category Details</a></li>
                                                 </ul>
                                             </li>
                                         </ul>
@@ -137,9 +136,9 @@
                             <!-- <p>Rem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
                             <div class="trending-animated">
                                 <ul id="js-news" class="js-hidden">
-                                    <li class="news-item">Bangladesh dolor sit amet, consectetur adipisicing elit.</li>
-                                    <li class="news-item">Spondon IT sit amet, consectetur.......</li>
-                                    <li class="news-item">Rem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                                    <li class="news-item">GUGMA Awards 2021. Kobby gets the artiste of the year</li>
+                                    <li class="news-item">Scott Evans Mapeke Produced by Nektunz tops mutiple radio charts</li>
+                                    <li class="news-item">Preachers came in with something extra ordinary , this single is titled Pray.</li>
                                 </ul>
                             </div>
                             
@@ -172,11 +171,12 @@
                         <div class="col-lg-6">
                             <div class="video-caption">
                                 <div class="top-caption">
-                                    <span class="color1">Politics</span>
+                                    <span class="color1">Urban Gospel</span>
                                 </div>
                                 <div class="bottom-caption">
-                                    <h2>Welcome To The Best Model Winner Contest At Look of the year</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod ipsum dolor sit. Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod ipsum dolor sit. Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod ipsum dolor sit lorem ipsum dolor sit.</p>
+                                    <h2>This Is Up Ep - Kobby Salm</h2>
+                                    <p>Urban Gospel Superstar <strong> Kobby salm</strong> is said to release his new ep called <strong>This Is Us</strong> and he has embarked on a journey of putting the emerging artiste in his space (Urabn Gosel ) on a freestyling beautiful
+                                        kobby salm is one of the post outstanding Urban Gospel artiste who has been doing well in the industry , lets keep supporting the urban gospel music for better outcome in the future.</p>
                                 </div>
                             </div>
                         </div>
@@ -185,31 +185,31 @@
                                 <div class="single-video">
                                     <iframe  src="https://www.youtube.com/embed/CicQIuG8hBo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     <div class="video-intro">
-                                        <h4>Welcotme To The Best Model Winner Contest</h4>
+                                        <h4>GUGMA21 Artiste of the year - Kobby salm</h4>
                                     </div>
                                 </div>
                                 <div class="single-video">
                                     <iframe  src="https://www.youtube.com/embed/rIz00N40bag" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     <div class="video-intro">
-                                        <h4>Welcotme To The Best Model Winner Contest</h4>
+                                        <h4>GUGMA21 Contemporay song of the year - Jayanna</h4>
                                     </div>
                                 </div>
                                 <div class="single-video">
                                     <iframe src="https://www.youtube.com/embed/CONfhrASy44" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     <div class="video-intro">
-                                        <h4>Welcotme To The Best Model Winner Contest</h4>
+                                        <h4>GUGMA21 Male Vocalist of the year - Kevin Py</h4>
                                     </div>
                                 </div>
                                 <div class="single-video">
                                     <iframe src="https://www.youtube.com/embed/lq6fL2ROWf8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     <div class="video-intro">
-                                        <h4>Welcotme To The Best Model Winner Contest</h4>
+                                        <h4>GUGMA21 Discovery of the year - L.O </h4>
                                     </div>
                                 </div>
                                 <div class="single-video">
                                     <iframe src="https://www.youtube.com/embed/0VxlQlacWV4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     <div class="video-intro">
-                                        <h4>Welcotme To The Best Model Winner Contest</h4>
+                                        <h4>GUGMA21 Music video of the year- Scott Evans  </h4>
                                     </div>
                                 </div>
                             </div>
@@ -230,9 +230,9 @@
                                 <!-- <p>Rem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
                                 <div class="trending-animated">
                                     <ul id="js-news" class="js-hidden">
-                                        <li class="news-item">Bangladesh dolor sit amet, consectetur adipisicing elit.</li>
-                                        <li class="news-item">Spondon IT sit amet, consectetur.......</li>
-                                        <li class="news-item">Rem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                                        <li class="news-item">The Flyboy to release a new banger this November.</li>
+                                        <li class="news-item">Vbuqs has been honoured for his good work at GUGMA21.</li>
+                                        <li class="news-item">Scott Evans wins the best music video of the year.</li>
                                     </ul>
                                 </div>
                                 
@@ -259,7 +259,7 @@
                                         Moms are like…buttons? Moms are like glue. Moms are like pizza crusts. Moms are the ones who make sure things happen—from birth to school lunch.</p>
                                 </div> 
                                 <div class="section-tittle">
-                                    <h3>Unordered list style?</h3>
+                                    <h3>Do you have christ in your life?</h3>
                                 </div>
                                 <div class="social-share pt-30">
                                     <div class="section-tittle">
@@ -319,7 +319,7 @@
                                             <a href="#"><img src="{% static 'pages/assets/img/news/icon-fb.png' %}" alt=""></a>
                                         </div>
                                         <div class="follow-count">  
-                                            <span>8,045</span>
+                                            <span>1,095</span>
                                             <p>Fans</p>
                                         </div>
                                     </div> 
@@ -328,7 +328,7 @@
                                             <a href="#"><img src="{% static 'pages/assets/img/news/icon-tw.png' %}" alt=""></a>
                                         </div>
                                         <div class="follow-count">
-                                            <span>8,045</span>
+                                            <span>4,645</span>
                                             <p>Fans</p>
                                         </div>
                                     </div>
@@ -337,7 +337,7 @@
                                             <a href="#"><img src="{% static 'pages/assets/img/news/icon-ins.png' %}" alt=""></a>
                                         </div>
                                         <div class="follow-count">
-                                            <span>8,045</span>
+                                            <span>1,544</span>
                                             <p>Fans</p>
                                         </div>
                                     </div>
@@ -346,7 +346,7 @@
                                             <a href="#"><img src="{% static 'pages/assets/img/news/icon-yo.png' %}" alt=""></a>
                                         </div>
                                         <div class="follow-count">
-                                            <span>8,045</span>
+                                            <span>406</span>
                                             <p>Fans</p>
                                         </div>
                                     </div>
@@ -373,11 +373,13 @@
                             <div class="single-footer-caption">
                                 <!-- logo -->
                                 <div class="footer-logo">
-                                    <a href="index.html"><img src="{% static 'pages/assets/img/logo/logo2_footer.png' %}" alt=""></a>
+                                    <a href="index.html"><img src="{% static 'pages/assets/img/logo/vbuqs.jpg' %}" style="width: 450px;" alt=""></a>
                                 </div>
                                 <div class="footer-tittle">
                                     <div class="footer-pera">
-                                        <p>Suscipit mauris pede for con sectetuer sodales adipisci for cursus fames lectus tempor da blandit gravida sodales  Suscipit mauris pede for con sectetuer sodales adipisci for cursus fames lectus tempor da blandit gravida sodales  Suscipit mauris pede for sectetuer.</p>
+                                        <p>Home of Urban Gospel Music,Trends,Latest News, Fresh Gossips,Konkonsa Corner in the gospel genere, get all on vbuqs world.
+                                            for Promotions Please contact us on the following contact number 
+                                            <br> +233 56 082 2994.</p>
                                     </div>
                                 </div>
                                 <!-- social -->
@@ -393,7 +395,7 @@
                         <div class="single-footer-caption mt-60">
                             <div class="footer-tittle">
                                 <h4>Newsletter</h4>
-                                <p>Heaven fruitful doesn't over les idays appear creeping</p>
+                                <p>Hey, Do you want to receive the latest update straight into your inbox, don't worry provide your email below and we will make sure to keep you updated, Thank You</p>
                                 <!-- Form -->
                                 <div class="footer-form" >
                                     <div id="mc_embed_signup">
@@ -420,12 +422,12 @@
                             </div>
                             <div class="instagram-gellay">
                                 <ul class="insta-feed">
-                                    <li><a href="#"><img src="{% static 'pages/assets/img/post/instra1.jpg' %}" alt=""></a></li>
-                                    <li><a href="#"><img src="{% static 'pages/assets/img/post/instra2.jpg' %}" alt=""></a></li>
-                                    <li><a href="#"><img src="{% static 'pages/assets/img/post/instra3.jpg' %}" alt=""></a></li>
-                                    <li><a href="#"><img src="{% static 'pages/assets/img/post/instra4.jpg' %}" alt=""></a></li>
-                                    <li><a href="#"><img src="{% static 'pages/assets/img/post/instra5.jpg' %}" alt=""></a></li>
-                                    <li><a href="#"><img src="{% static 'pages/assets/img/post/instra6.jpg' %}" alt=""></a></li>
+                                    <li><a href="#"><img src="{% static 'pages\assets\img\post\smoke1.png' %}" alt=""></a></li>
+                                    <li><a href="#"><img src="{% static 'pages\assets\img\post\smoke2.png' %}" alt=""></a></li>
+                                    <li><a href="#"><img src="{% static 'pages\assets\img\post\smoke3.png' %}" alt=""></a></li>
+                                    <li><a href="#"><img src="{% static 'pages\assets\img\post\smoke4.png' %}" alt=""></a></li>
+                                    <li><a href="#"><img src="{% static 'pages\assets\img\post\smoke5.png' %}" alt=""></a></li>
+                                    <li><a href="#"><img src="{% static 'pages\assets\img\post\smoke5.png' %}" alt=""></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -441,7 +443,7 @@
                         <div class="col-lg-6">
                             <div class="footer-copy-right">
                                 <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="Julius12.pythonanywhere.com" target="_blank">Boakye Julius</a>
   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                             </div>
                         </div>

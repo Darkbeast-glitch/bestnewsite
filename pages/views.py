@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from strapcodes.models import News
+from strapcodes.models import News,WhatsNew
 
 # Create your views here.
 
@@ -19,12 +19,16 @@ def IndexView(request):
     #actually they are all just 4 but should we have another post that's not what's new but starts also with Whats
     # I guess we have just 4 but were looking for 5 IndexOutOfRangeException
     whats_new_news = News.objects.filter(title__startswith='Whats').order_by('-pub_date')[:4]
+    
+    newpost = WhatsNew.objects.all()
+    
     context = {
     'right_nav_news': right_nav_news, 
     'trending_bottom_news': trending_bottom_news,
      'active_weekly_one': active_weekly_one, 
      'weekly_top_news':weekly_top_news, 
-     'whats_new_news': whats_new_news
+     'whats_new_news': whats_new_news,
+     'newpost':newpost
      }
     return render(request, 'pages/index.html', context)
 

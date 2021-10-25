@@ -36,3 +36,15 @@ class News(models.Model):
 
     def __str__(self):
         return '{} by {} on {}'.format(self.title, self.author, self.pub_date)
+
+
+class WhatsNew(models.Model):
+    post_Image = models.ImageField(upload_to = 'news_gallery/')
+    category = models.CharField(max_length=100, choices=NEWS_CATEGORIES)
+    title = models.CharField(max_length=100)
+   
+    class Meta:
+        verbose_name_plural = 'WhatsNew'
+        
+    def __str__(self):
+        return self.title

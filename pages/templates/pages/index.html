@@ -8,7 +8,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="manifest" href="site.webmanifest">
-		<link rel="shortcut icon" type="image/x-icon" href="{% static 'pages/assets/img/logo/vbuqs.jpg''%}">
+		<link rel="shortcut icon" type="image/x-icon" href="{% static 'pages/assets/img/logo/vbuqs.jpg'%}">
 
 		<!-- CSS here -->
             <link rel="stylesheet" href="{% static 'pages/assets/css/bootstrap.min.css' %}">
@@ -51,7 +51,7 @@
                                 <div class="header-info-left">
                                     <ul>     
                                         <li><img src="{% static 'pages/assets/img/icon/header_icon1.png' %}" alt="">34ºc, Sunny </li>
-                                        <li><img src="{% static 'pages/assets/img/icon/header_icon1.png' %}" alt="">Friday, 22nd October 2021</li>
+                                        <li><img src="{% static 'pages/assets/img/icon/header_icon1.png' %}" alt="">Friday, 23nd October 2022</li>
                                     </ul>
                                 </div>
                                 <div class="header-info-right">
@@ -71,7 +71,7 @@
                             <!-- Logo -->
                             <div class="col-xl-3 col-lg-3 col-md-3">
                                 <div class="logo">
-                                    <a href="index.html"><img src="{% static 'pages/assets/img/logo/vbuq.png' %}" style="width: 350px;" alt=""></a>
+                                    <a href="index.html"><img src="{% static 'pages/assets/img/logo/vbuq.png' %}" style="width: 400px;" alt=""></a>
                                 </div>
                             </div>
                             <div class="col-xl-9 col-lg-9 col-md-9">
@@ -88,7 +88,7 @@
                             <div class="col-xl-10 col-lg-10 col-md-12 header-flex">
                                 <!-- sticky -->
                                     <div class="sticky-logo">
-                                        <a href="index.html"><img src="{% static 'pages/assets/img/logo/vbuq.png' %}" style="width: 290px;" alt=""></a>
+                                        <a href="index.html"><img src="{% static 'pages/assets/img/logo/vbuq.png' %}" style="width: 400px;" alt=""></a>
                                     </div>
                                 <!-- Main-menu -->
                                 <div class="main-menu d-none d-md-block">
@@ -161,10 +161,10 @@
                         <!-- Trending Top -->
                         <div class="trending-top mb-30">
                             <div class="trend-top-img">
-                                <img src="{% static 'pages/assets/img/trending/trending_top.jpg' %}" alt="">
+                                <img src="{% static 'pages/assets/img/trending/preahcherspray.jpg' %}" alt="">
                                 <div class="trend-top-cap">
                                     <span>Appetizers</span>
-                                    <h2><a href="details.html">Welcome To The Best Model Winner<br> Contest At Look of the year</a></h2>
+                                    <h2><a href="details.html">Preachers came in with  powerful heat<br> called PRAY (Number 1)</a></h2>
                                 </div>
                             </div>
                         </div>
@@ -175,7 +175,7 @@
                                 <div class="col-lg-4">
                                     <div class="single-bottom mb-35">
                                         <div class="trend-bottom-img mb-30">
-                                            <img src="{{ news.feature_image.url }}" alt="">
+                                            <img src="" alt="">
                                         </div>
                                         <div class="trend-bottom-cap">
                                             <span class="color3">{{ news.category }}</span>
@@ -193,7 +193,7 @@
                        {% for news in right_nav_news %} 
                         <div class="trand-right-single d-flex">
                             <div class="trand-right-img">
-                                <img src="{{ news.feature_image.url }}" alt="">
+                                <img src="" alt="">
                             </div>
                             <div class="trand-right-cap">
                                 <span class="color2">{{ news.category }}</span>
@@ -217,7 +217,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="section-tittle mb-30">
-                            <h3>Weekly Top News</h3>
+                            <h3>Weekly Top News - Urban Gospel</h3>
                         </div>
                     </div>
                 </div>
@@ -228,11 +228,11 @@
                             <div class="weekly-single active">
                             
                                 <div class="weekly-img">
-                                        <img src="{{ active_weekly_one.feature_image.url }}" alt="">
+                                        <img src="{% static 'pages/assets/img/gallery/yehowa.jpg'%}" alt="">
                                 </div>
                                 <div class="weekly-caption">
-                                    <span class="color1">{{ active_weekly_one.category }}</span>
-                                    <h4><a href="#">{{ active_weekly_one.title }}</a></h4>
+                                    <span class="color1">JUST IN</span>
+                                    <h4><a href="#">The Flyboy has announced his new up coming single titled <strong>Yehowa Ye</strong></a></h4>
                                 </div>
                             
                             </div>
@@ -240,21 +240,21 @@
                             {% for news in weekly_top_news %}
                             <div class="weekly-single">
                                 <div class="weekly-img">
-                                        <img src="{{ news.feature_image.url }}" alt="">
+                                        <img src="{% static 'pages/assets/img/trending/challenge.png' %}" alt="">
                                 </div>
                                 <div class="weekly-caption">
-                                    <span class="color1">{{ news.category }}</span>
-                                    <h4><a href="#">{{ news.title }}</a></h4>
+                                    <span class="color1">Challenge</span>
+                                    <h4><a href="#">Preachers has set on with the Prayfeaturechallenge and the deadline is 31 October 2021</a></h4>
                                 </div>
                             </div>
                             {% endfor %}
                             <div class="weekly-single">
                                 <div class="weekly-img">
-                                    <img src="{% static 'pages/assets/img/news/weeklyNews2.jpg' %}" alt="">
+                                    <img src="{% static 'pages/assets/img/trending/challenge.png' %}" alt="">
                                 </div>
                                 <div class="weekly-caption">
-                                    <span class="color1">Strike</span>
-                                    <h4><a href="#">Welcome To The Best Model  Winner Contest First One </a></h4>
+                                    <span class="color1">Challenge</span>
+                                    <h4><a href="#">Preachers has set on with the Prayfeaturechallenge and the deadline is 31 October 2021 </a></h4>
                                 </div>
                             </div> 
                         </div>
@@ -280,12 +280,11 @@
                             <!--Nav Button  -->                                            
                             <nav>                                                                     
                                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">All</a>
-                                    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Lifestyle</a>
-                                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Travel</a>
-                                    <a class="nav-item nav-link" id="nav-last-tab" data-toggle="tab" href="#nav-last" role="tab" aria-controls="nav-contact" aria-selected="false">Fashion</a>
-                                    <a class="nav-item nav-link" id="nav-Sports" data-toggle="tab" href="#nav-nav-Sport" role="tab" aria-controls="nav-contact" aria-selected="false">Sports</a>
-                                    <a class="nav-item nav-link" id="nav-technology" data-toggle="tab" href="#nav-techno" role="tab" aria-controls="nav-contact" aria-selected="false">Technology</a>
+                                    <a class="nav-item nav-link active" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">New single</a>
+                                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Album</a>
+                                    <a class="nav-item nav-link" id="nav-last-tab" data-toggle="tab" href="#nav-last" role="tab" aria-controls="nav-contact" aria-selected="false">Blogs</a>
+                                    <a class="nav-item nav-link" id="nav-Sports" data-toggle="tab" href="#nav-nav-Sport" role="tab" aria-controls="nav-contact" aria-selected="false">News</a>
+                                    <a class="nav-item nav-link" id="nav-technology" data-toggle="tab" href="#nav-techno" role="tab" aria-controls="nav-contact" aria-selected="false">Latest Video</a>
                                 </div>
                             </nav>
                             <!--End Nav Button  -->
@@ -301,15 +300,15 @@
                                 <div class="whats-news-caption">
                                     <div class="row">
                                         
-                                    {% for news in whats_new_news %}
+                                    {% for new in newpost %}
                                         <div class="col-lg-6 col-md-6">
                                             <div class="single-what-news mb-100">
                                                 <div class="what-img">
-                                                    <img src="{{ news.feature_image.url }}" alt="">
+                                                    <img src="{{ new.post_Image.url }}" alt="">
                                                 </div>
                                                 <div class="what-cap">
-                                                    <span class="color1">{{ news.category }}</span>
-                                                    <h4><a href="#">{{ news.title }}</a></h4>
+                                                    <span class="color1">{{ new.category }}</span>
+                                                    <h4><a href="#">{{ new.title }}</a></h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -324,44 +323,44 @@
                                         <div class="col-lg-6 col-md-6">
                                             <div class="single-what-news mb-100">
                                                 <div class="what-img">
-                                                    <img src="{% static 'pages/assets/img/news/whatNews1.jpg' %}" alt="">
+                                                    <img src="{% static 'pages/assets/img/blog/Mealgirey.jpg'%}" alt="">
                                                 </div>
                                                 <div class="what-cap">
-                                                    <span class="color1">Night party</span>
-                                                    <h4><a href="#">Welcome To The Best Model  Winner Contest</a></h4>
+                                                    <span class="color1">New Single/Audio</span>
+                                                    <h4><a href="https://www.repjesus.com/reps/audio/11333/meal+girey+-+baba+mealgirey.html">Meal Girey - Baba(mealgirey) Listen now on  RepJesus.com</a></h4>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-6">
                                             <div class="single-what-news mb-100">
                                                 <div class="what-img">
-                                                    <img src="{% static 'pages/assets/img/news/whatNews2.jpg' %}" alt="">
+                                                    <img src="https://www.repjesus.com/images/photos/6254.jpg" alt="">
                                                 </div>
                                                 <div class="what-cap">
-                                                    <span class="color1">Night party</span>
-                                                    <h4><a href="#">Welcome To The Best Model  Winner Contest</a></h4>
+                                                    <span class="color1">New Single/Audio</span>
+                                                    <h4><a href="https://www.repjesus.com/reps/audio/11328/we+are+creature+-+clarity.html">Clarity - We Are Creature listen now on RepJesus.com</a></h4>
                                                 </div>
                                             </div>
                                         </div> 
                                         <div class="col-lg-6 col-md-6">
                                             <div class="single-what-news mb-100">
                                                 <div class="what-img">
-                                                    <img src="{% static 'pages/assets/img/news/whatNews3.jpg' %}" alt="">
+                                                    <img src="https://www.repjesus.com/images/photos/6252.jpg" alt="">
                                                 </div>
                                                 <div class="what-cap">
-                                                    <span class="color1">Night party</span>
-                                                    <h4><a href="#">Welcome To The Best Model  Winner Contest</a></h4>
+                                                    <span class="color1">New Single/Audio</span>
+                                                    <h4><a href="https://www.repjesus.com/reps/audio/11326/shimon+atunde+feat+mikesolo+-+take+over.html">Shimon Atunde feat MikeSolo - Take Over  listen now on RepJesus.com</a></h4>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-6">
                                             <div class="single-what-news mb-100">
                                                 <div class="what-img">
-                                                    <img src="{% static 'pages/assets/img/news/whatNews4.jpg' %}" alt="">
+                                                    <img src="https://www.repjesus.com/images/photos/6250.jpg" alt="">
                                                 </div>
                                                 <div class="what-cap">
-                                                    <span class="color1">Night party</span>
-                                                    <h4><a href="#">Welcome To The Best Model  Winner Contest</a></h4>
+                                                    <span class="color1">New Single/Audio</span>
+                                                    <h4><a href="https://www.repjesus.com/reps/audio/11324/sam+adebanjo+-+standing.html">Sam Adebanjo - STANDING listen on RepJesus.com</a></h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -375,44 +374,44 @@
                                         <div class="col-lg-6 col-md-6">
                                             <div class="single-what-news mb-100">
                                                 <div class="what-img">
-                                                    <img src="{% static 'pages/assets/img/news/whatNews1.jpg' %}" alt="">
+                                                    <img src="https://www.repjesus.com/images/photos/6253.jpg" alt="">
                                                 </div>
                                                 <div class="what-cap">
-                                                    <span class="color1">Night party</span>
-                                                    <h4><a href="#">Welcome To The Best Model  Winner Contest</a></h4>
+                                                    <span class="color1">New Single/Audio</span>
+                                                    <h4><a href="https://www.repjesus.com/reps/audio/11327/skywalker+-+oasis.html">Skywalker - Oasis listen now on RepJesus.com</a></h4>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-6">
                                             <div class="single-what-news mb-100">
                                                 <div class="what-img">
-                                                    <img src="{% static 'pages/assets/img/news/whatNews2.jpg' %}" alt="">
+                                                    <img src="https://www.repjesus.com/images/photos/6251.jpg" alt="">
                                                 </div>
                                                 <div class="what-cap">
-                                                    <span class="color1">Night party</span>
-                                                    <h4><a href="#">Welcome To The Best Model  Winner Contest</a></h4>
+                                                    <span class="color1">New Single/Audio</span>
+                                                    <h4><a href="https://www.repjesus.com/reps/blog/11325/sayotheartist+-+clean+slate.html">Sayotheartist - Clean Slate listen now on RepJesus.com</a></h4>
                                                 </div>
                                             </div>
                                         </div> 
                                         <div class="col-lg-6 col-md-6">
                                             <div class="single-what-news mb-100">
                                                 <div class="what-img">
-                                                    <img src="{% static 'pages/assets/img/news/whatNews3.jpg' %}" alt="">
+                                                    <img src="https://www.repjesus.com/images/photos/6164.png" alt="">
                                                 </div>
                                                 <div class="what-cap">
-                                                    <span class="color1">Night party</span>
-                                                    <h4><a href="#">Welcome To The Best Model  Winner Contest</a></h4>
+                                                    <span class="color1">Latest Album</span>
+                                                    <h4><a href="https://www.repjesus.com/reps/link/11226/wisekoffi+-+beware+of+the+times+album+wisekoffi.html">WiseKoffi - BEWARE OF THE TIMES ALBUM listen now on RepJesus.com</a></h4>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-6">
                                             <div class="single-what-news mb-100">
                                                 <div class="what-img">
-                                                    <img src="{% static 'pages/assets/img/news/whatNews4.jpg' %}" alt="">
+                                                    <img src="https://www.repjesus.com/images/photos/6258.jpg" alt="">
                                                 </div>
                                                 <div class="what-cap">
-                                                    <span class="color1">Night party</span>
-                                                    <h4><a href="#">Welcome To The Best Model  Winner Contest</a></h4>
+                                                    <span class="color1">mixtapes</span>
+                                                    <h4><a href="https://www.repjesus.com/reps/video/11335/dj+cyrus++-+gospel+drill+djcyrusgh.html">Dj Cyus - Gospel Drill listen now on RepJesus.com</a></h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -426,11 +425,11 @@
                                         <div class="col-lg-6 col-md-6">
                                             <div class="single-what-news mb-100">
                                                 <div class="what-img">
-                                                    <img src="{% static 'pages/assets/img/news/whatNews1.jpg' %}" alt="">
+                                                    <img src="https://www.repjesus.com/images/photos/6255.jpg" alt="">
                                                 </div>
                                                 <div class="what-cap">
-                                                    <span class="color1">Night party</span>
-                                                    <h4><a href="#">Welcome To The Best Model  Winner Contest</a></h4>
+                                                    <span class="color1">Blogs</span>
+                                                    <h4><a href="#">Priceless by wisekoffi</a></h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -440,8 +439,8 @@
                                                     <img src="{% static 'pages/assets/img/news/whatNews2.jpg' %}" alt="">
                                                 </div>
                                                 <div class="what-cap">
-                                                    <span class="color1">Night party</span>
-                                                    <h4><a href="#">Welcome To The Best Model  Winner Contest</a></h4>
+                                                    <span class="color1">Blog</span>
+                                                    <h4><a href="#">listen now on RepJesus.com</a></h4>
                                                 </div>
                                             </div>
                                         </div> 
@@ -451,7 +450,7 @@
                                                     <img src="{% static 'pages/assets/img/news/whatNews3.jpg' %}" alt="">
                                                 </div>
                                                 <div class="what-cap">
-                                                    <span class="color1">Night party</span>
+                                                    <span class="color1">Blog</span>
                                                     <h4><a href="#">Welcome To The Best Model  Winner Contest</a></h4>
                                                 </div>
                                             </div>
@@ -462,7 +461,7 @@
                                                     <img src="{% static 'pages/assets/img/news/whatNews4.jpg' %}" alt="">
                                                 </div>
                                                 <div class="what-cap">
-                                                    <span class="color1">Night party</span>
+                                                    <span class="color1">Blog</span>
                                                     <h4><a href="#">Welcome To The Best Model  Winner Contest</a></h4>
                                                 </div>
                                             </div>
@@ -480,7 +479,7 @@
                                                     <img src="{% static 'pages/assets/img/news/whatNews1.jpg' %}" alt="">
                                                 </div>
                                                 <div class="what-cap">
-                                                    <span class="color1">Night party</span>
+                                                    <span class="color1">News</span>
                                                     <h4><a href="#">Welcome To The Best Model  Winner Contest</a></h4>
                                                 </div>
                                             </div>
@@ -491,7 +490,7 @@
                                                     <img src="{% static 'pages/assets/img/news/whatNews2.jpg' %}" alt="">
                                                 </div>
                                                 <div class="what-cap">
-                                                    <span class="color1">Night party</span>
+                                                    <span class="color1">News</span>
                                                     <h4><a href="#">Welcome To The Best Model  Winner Contest</a></h4>
                                                 </div>
                                             </div>
@@ -502,7 +501,7 @@
                                                     <img src="{% static 'pages/assets/img/news/whatNews3.jpg' %}" alt="">
                                                 </div>
                                                 <div class="what-cap">
-                                                    <span class="color1">Night party</span>
+                                                    <span class="color1">News</span>
                                                     <h4><a href="#">Welcome To The Best Model  Winner Contest</a></h4>
                                                 </div>
                                             </div>
@@ -513,8 +512,8 @@
                                                     <img src="{% static 'pages/assets/img/news/whatNews4.jpg' %}" alt="">
                                                 </div>
                                                 <div class="what-cap">
-                                                    <span class="color1">Night party</span>
-                                                    <h4><a href="#">Welcome To The Best Model  Winner Contest</a></h4>
+                                                    <span class="color1">News</span>
+                                                    <h4><a href="#">VBUQS WILL FIX A CONTNET HERE</a></h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -531,8 +530,8 @@
                                                     <img src="{% static 'pages/assets/img/news/whatNews1.jpg' %}" alt="">
                                                 </div>
                                                 <div class="what-cap">
-                                                    <span class="color1">Night party</span>
-                                                    <h4><a href="#">Welcome To The Best Model  Winner Contest</a></h4>
+                                                    <span class="color1">News</span>
+                                                    <h4><a href="#">VBUQS WILL FIX A CONTNET HERE</a></h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -542,8 +541,8 @@
                                                     <img src="{% static 'pages/assets/img/news/whatNews2.jpg' %}" alt="">
                                                 </div>
                                                 <div class="what-cap">
-                                                    <span class="color1">Night party</span>
-                                                    <h4><a href="#">Welcome To The Best Model  Winner Contest</a></h4>
+                                                    <span class="color1">VBUQS HEADINGS</span>
+                                                    <h4><a href="#">VBUQS WILL FIX A CONTENT HERE</a></h4>
                                                 </div>
                                             </div>
                                         </div> 
@@ -553,8 +552,8 @@
                                                     <img src="{% static 'pages/assets/img/news/whatNews3.jpg' %}" alt="">
                                                 </div>
                                                 <div class="what-cap">
-                                                    <span class="color1">Night party</span>
-                                                    <h4><a href="#">Welcome To The Best Model  Winner Contest</a></h4>
+                                                    <span class="color1">VBUQS HEADINGS</span>
+                                                    <h4><a href="#">VBUQS WILL FIX A CONTENT HERE</a></h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -564,8 +563,8 @@
                                                     <img src="{% static 'pages/assets/img/news/whatNews4.jpg' %}" alt="">
                                                 </div>
                                                 <div class="what-cap">
-                                                    <span class="color1">Night party</span>
-                                                    <h4><a href="#">Welcome To The Best Model  Winner Contest</a></h4>
+                                                    <span class="color1">VBUQS HEADINGS</span>
+                                                    <h4><a href="#">VBUQS WILL FIX A CONTENT HERE</a></h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -590,7 +589,7 @@
                                 <a href="#"><img src="{% static 'pages/assets/img/news/icon-fb.png' %}" alt=""></a>
                             </div>
                             <div class="follow-count">  
-                                <span>8,045</span>
+                                <span>1,098</span>
                                 <p>Fans</p>
                             </div>
                         </div> 
@@ -599,7 +598,7 @@
                                 <a href="#"><img src="{% static 'pages/assets/img/news/icon-tw.png' %}" alt=""></a>
                             </div>
                             <div class="follow-count">
-                                <span>8,045</span>
+                                <span>4,645</span>
                                 <p>Fans</p>
                             </div>
                         </div>
@@ -608,7 +607,7 @@
                                 <a href="#"><img src="{% static 'pages/assets/img/news/icon-ins.png' %}" alt=""></a>
                             </div>
                             <div class="follow-count">
-                                <span>8,045</span>
+                                <span>1,544</span>
                                 <p>Fans</p>
                             </div>
                         </div>
@@ -617,7 +616,7 @@
                                 <a href="#"><img src="{% static 'pages/assets/img/news/icon-yo.png' %}" alt=""></a>
                             </div>
                             <div class="follow-count">
-                                <span>8,045</span>
+                                <span>406</span>
                                 <p>Fans</p>
                             </div>
                         </div>
@@ -674,17 +673,17 @@
                 <div class="col-12">
                     <div class="video-items-active">
                         <div class="video-items text-center">
-                            <iframe src="https://www.youtube.com/embed/CicQIuG8hBo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe src="https://m.youtube.com/watch?v=t25uMCWb-gI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <div class="video-items text-center">
-                            <iframe  src="https://www.youtube.com/embed/rIz00N40bag" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe  src="https://m.youtube.com/watch?v=tjbaJGrPng0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <div class="video-items text-center">
-                            <iframe src="https://www.youtube.com/embed/CONfhrASy44" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe src="https://m.youtube.com/watch?v=S0SSBEJAjks" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
                         </div>
                         <div class="video-items text-center">
-                            <iframe src="https://www.youtube.com/embed/lq6fL2ROWf8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe src="https://m.youtube.com/watch?v=EKF0p_D0lxI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                          
                         </div>
                         <div class="video-items text-center">
@@ -698,11 +697,13 @@
                     <div class="col-lg-6">
                         <div class="video-caption">
                             <div class="top-caption">
-                                <span class="color1">Politics</span>
+                                <span class="color1">Uraban Gossips</span>
                             </div>
                             <div class="bottom-caption">
-                                <h2>Welcome To The Best Model Winner Contest At Look of the year</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod ipsum dolor sit. Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod ipsum dolor sit. Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod ipsum dolor sit lorem ipsum dolor sit.</p>
+                                <h2>Kobby Salm This is Us Ep</h2>
+                                <p>Kobby salm if coming with a fire Ep and there what he chose to do before the ep is so great , kobby salm decided to make emerging artiste in his space to freestyle on  a beat for <strong>This Is Us Ep</strong> and trust guys like 
+                                    <strong>Trooth,Kingmade(RJE),Tephlon</strong>.</p> has done some mavilouse works already now all we waiting for now is the actual ep  which you already know is going to be fire cause it coming from the superstar him self
+                                    Kobby Salm
                             </div>
                         </div>
                     </div>
@@ -711,31 +712,31 @@
                             <div class="single-video">
                                 <iframe  src="https://www.youtube.com/embed/CicQIuG8hBo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 <div class="video-intro">
-                                    <h4>Welcotme To The Best Model Winner Contest</h4>
+                                    <h4>VBUQS WILL FIX A CONTENT HERE</h4>
                                 </div>
                             </div>
                             <div class="single-video">
                                 <iframe  src="https://www.youtube.com/embed/rIz00N40bag" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 <div class="video-intro">
-                                    <h4>Welcotme To The Best Model Winner Contest</h4>
+                                    <h4>VBUQS WILL FIX A CONTENT HERE</h4>
                                 </div>
                             </div>
                             <div class="single-video">
                                 <iframe src="https://www.youtube.com/embed/CONfhrASy44" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 <div class="video-intro">
-                                    <h4>Welcotme To The Best Model Winner Contest</h4>
+                                    <h4>VBUQS WILL FIX A CONTENT HERE</h4>
                                 </div>
                             </div>
                             <div class="single-video">
                                 <iframe src="https://www.youtube.com/embed/lq6fL2ROWf8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 <div class="video-intro">
-                                    <h4>Welcotme To The Best Model Winner Contest</h4>
+                                    <h4>VBUQS WILL FIX A CONTENT HERE</h4>
                                 </div>
                             </div>
                             <div class="single-video">
                                 <iframe src="https://www.youtube.com/embed/0VxlQlacWV4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 <div class="video-intro">
-                                    <h4>Welcotme To The Best Model Winner Contest</h4>
+                                    <h4>VBUQS WILL FIX A CONTENT HERE</h4>
                                 </div>
                             </div>
                         </div>
@@ -765,7 +766,7 @@
                                     <img src="{% static 'pages/assets/img/news/recent1.jpg' %}" alt="">
                                 </div>
                                 <div class="what-cap">
-                                    <span class="color1">Night party</span>
+                                    <span class="color1">VBUQS HEADINGS</span>
                                     <h4><a href="#">Welcome To The Best Model  Winner Contest</a></h4>
                                 </div>
                             </div>
@@ -774,7 +775,7 @@
                                     <img src="{% static 'pages/assets/img/news/recent2.jpg' %}" alt="">
                                 </div>
                                 <div class="what-cap">
-                                    <span class="color1">Night party</span>
+                                    <span class="color1">VBUQS HEADINGS</span>
                                     <h4><a href="#">Welcome To The Best Model  Winner Contest</a></h4>
                                 </div>
                             </div>
@@ -783,7 +784,7 @@
                                     <img src="{% static 'pages/assets/img/news/recent3.jpg' %}" alt="">
                                 </div>
                                 <div class="what-cap">
-                                    <span class="color1">Night party</span>
+                                    <span class="color1">VBUQS HEADINGS</span>
                                     <h4><a href="#">Welcome To The Best Model  Winner Contest</a></h4>
                                 </div>
                             </div>
@@ -792,7 +793,7 @@
                                     <img src="{% static 'pages/assets/img/news/recent2.jpg' %}" alt="">
                                 </div>
                                 <div class="what-cap">
-                                    <span class="color1">Night party</span>
+                                    <span class="color1">VBUQS HEADINGS</span>
                                     <h4><a href="#">Welcome To The Best Model  Winner Contest</a></h4>
                                 </div>
                             </div>
@@ -840,7 +841,9 @@
                                 </div>
                                 <div class="footer-tittle">
                                     <div class="footer-pera">
-                                        <p>Suscipit mauris pede for con sectetuer sodales adipisci for cursus fames lectus tempor da blandit gravida sodales  Suscipit mauris pede for con sectetuer sodales adipisci for cursus fames lectus tempor da blandit gravida sodales  Suscipit mauris pede for sectetuer.</p>
+                                        <p>Home of Urban Gospel Music,Trends,Latest News, Fresh Gossips,Konkonsa Corner in the gospel genere, get all on vbuqs world.
+                                            for Promotions Please contact us on the following contact number 
+                                            <br> +233 56 082 2994.</p>
                                     </div>
                                 </div>
                                 <!-- social -->
@@ -856,7 +859,7 @@
                         <div class="single-footer-caption mt-60">
                             <div class="footer-tittle">
                                 <h4>Newsletter</h4>
-                                <p>Heaven fruitful doesn't over les idays appear creeping</p>
+                                <p>Hey, Do you want to receive the latest update straight into your inbox, don't worry provide your email below and we will make sure to keep you updated, Thank You</p>
                                 <!-- Form -->
                                 <div class="footer-form" >
                                     <div id="mc_embed_signup">
@@ -883,12 +886,12 @@
                             </div>
                             <div class="instagram-gellay">
                                 <ul class="insta-feed">
-                                    <li><a href="#"><img src="{% static 'pages/assets/img/post/instra1.jpg' %}" alt=""></a></li>
-                                    <li><a href="#"><img src="{% static 'pages/assets/img/post/instra2.jpg' %}" alt=""></a></li>
-                                    <li><a href="#"><img src="{% static 'pages/assets/img/post/instra3.jpg' %}" alt=""></a></li>
-                                    <li><a href="#"><img src="{% static 'pages/assets/img/post/instra4.jpg' %}" alt=""></a></li>
-                                    <li><a href="#"><img src="{% static 'pages/assets/img/post/instra5.jpg' %}" alt=""></a></li>
-                                    <li><a href="#"><img src="{% static 'pages/assets/img/post/instra6.jpg' %}" alt=""></a></li>
+                                    <li><a href="#"><img src="{% static 'pages\assets\img\post\smoke1.png' %}" alt=""></a></li>
+                                    <li><a href="#"><img src="{% static 'pages\assets\img\post\smoke2.png' %}" alt=""></a></li>
+                                    <li><a href="#"><img src="{% static 'pages\assets\img\post\smoke3.png' %}" alt=""></a></li>
+                                    <li><a href="#"><img src="{% static 'pages\assets\img\post\smoke4.png' %}" alt=""></a></li>
+                                    <li><a href="#"><img src="{% static 'pages\assets\img\post\smoke5.png' %}" alt=""></a></li>
+                                    <li><a href="#"><img src="{% static 'pages\assets\img\post\smoke5.png' %}" alt=""></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -904,7 +907,7 @@
                         <div class="col-lg-6">
                             <div class="footer-copy-right">
                                 <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Boakye Julius</a>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This Website was built  with <i class="ti-heart" aria-hidden="true"></i> by <a href="Julius12.pythonanywhere.com" target="_blank">Boakye Julius</a>
   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                             </div>
                         </div>
